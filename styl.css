@@ -1,14 +1,25 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "aside div"
+    "footer footer";
+}
+
 body {
   background-color: #7d7f85;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-baner {
+header {
+  grid-area: header;
+  display: grid;
   height: 260px;
   width: 100%;
 }
 
 aside {
+  grid-area: aside;
   background-color: #1a3b98;
   height: 600px;
   width: 20%;
@@ -26,6 +37,8 @@ main {
 }
 
 div {
+  grid-area: div;
+  display: grid;
   background-color: #c2c3c2;
   text-align: center;
   color: #886829;
@@ -35,6 +48,8 @@ div {
 }
 
 footer {
+  grid-area: footer;
+  display: grid;
   background-color: #1a3b98;
   text-align: center;
   padding-top: 10px;
